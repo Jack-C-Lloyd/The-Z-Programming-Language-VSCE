@@ -1,0 +1,57 @@
+{
+	"name": "zeta",
+	"publisher": "Jack-C-Lloyd",
+	"displayName": "Zeta: The Z Programming Language",
+	"description": "Zeta, denoted by the Greek letter 'Z', is—purely—an educational computer programming language.",
+	"version": "0.0.1",
+	"icon": "images/light.png",
+	"engines": {
+		"vscode": "^1.51.0"
+	},
+	"categories": [
+		"Education",
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "zeta",
+				"aliases": [
+					"Zeta",
+					"zeta"
+				],
+				"extensions": [
+					".zeta"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "zeta",
+				"scopeName": "source.zeta",
+				"path": "./syntaxes/zeta.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "zeta",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Jack-C-Lloyd/The-Z-Programming-Language-VSCE"
+	},
+	"author": {
+		"email": "jc.lloyd@hotmail.co.uk",
+		"name": "Jack C. Lloyd",
+		"url": "http://jl1044.brighton.domains"
+	},
+	"__metadata": {
+		"id": "d5453f04-5dcd-4ab9-8730-3056e400d47f",
+		"publisherDisplayName": "Jack C. Lloyd",
+		"publisherId": "e259625d-fdf1-4173-910c-65e795ee65df"
+	}
+}

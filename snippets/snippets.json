@@ -1,0 +1,187 @@
+{
+	// Comments
+	"Single-line Comments": {
+		"prefix": "comment-single",
+		"body": [
+			"// ${1:...}"
+		],
+		"description": "A single-line comment."
+	},
+	"Multi-line Comments": {
+		"prefix": "comment-multi",
+		"body": [
+			"/* ${1:...} */"
+		],
+		"description": "A single-line comment."
+	},
+	// Scopes
+	"Begin-End Statement": {
+		"prefix": "begin-end",
+		"body": [
+			"begin",
+			"\t${1:statement(s)}",
+			"end"
+		],
+		"description": "A begin-end statement."
+	},
+	// If Statements
+	"If Statement": {
+		"prefix": "if",
+		"body": [
+			"if ${1:condition} begin",
+			"\t${2:statement(s)}",
+			"end"
+		],
+		"description": "An if statement."
+	},
+	"If-Else Statement": {
+		"prefix": "if-else",
+		"body": [
+			"if ${1:condition} begin",
+			"\t${2:statement(s)}",
+			"else",
+			"\t${3:statement(s)}",
+			"end"
+		],
+		"description": "An if-else statement."
+	},
+	// Switch Statement
+	"Switch Statement": {
+		"prefix": "switch",
+		"body": [
+			"switch ${1:expression} begin",
+			"\tcase ${2:expression}:",
+			"\t\t${3:statement(s)}",
+			"\t\tbreak",
+			"\t",
+			"\tdefault:",
+			"\t\t${4:statement(s)}",
+			"\t\tbreak",
+			"end"
+		],
+		"description": "An if statement."
+	},
+	// While Loops
+	"While Loop": {
+		"prefix": "while",
+		"body": [
+			"while ${1:condition} begin",
+			"\t${2:statement(s)}",
+			"end"
+		],
+		"description": "A while loop."
+	},
+	"While-Else Loop": {
+		"prefix": "while-else",
+		"body": [
+			"while ${1:condition} begin",
+			"\t${2:statement(s)}",
+			"else",
+			"\t${3:statement(s)},",
+			"end"
+		],
+		"description": "A while loop."
+	},
+	// Until Loops
+	"Until Loop": {
+		"prefix": "until",
+		"body": [
+			"until ${1:condition} begin",
+			"\t${2:statement(s)}",
+			"end"
+		],
+		"description": "An until loop."
+	},
+	"Until-Else Loop": {
+		"prefix": "until-else",
+		"body": [
+			"until ${1:condition} begin",
+			"\t${2:statement(s)}",
+			"else",
+			"\t${3:statement(s)}",
+			"end"
+		],
+		"description": "An until-else loop."
+	},
+	// For Loops
+	"For Loop": {
+		"prefix": "for",
+		"body": [
+			"for ${1:identifier(s)} in ${2:collection(s)} begin",
+			"\t${3:statement(s)}",
+			"end"
+		],
+		"description": "A for loop."
+	},
+	"For-Else Loop": {
+		"prefix": "for-else",
+		"body": [
+			"for ${1:identifier(s)} in ${2:collection(s)} begin",
+			"\t${3:statement(s)}",
+			"else",
+			"\t${4:statement(s)}",
+			"end"
+		],
+		"description": "A for loop."
+	},
+	// Procedures
+	"Main Procedure": {
+		"prefix": "main",
+		"body": [
+			"main (args : string []) begin",
+			"\t$0",
+			"end"
+		],
+		"description": "The main procedure."
+	},
+	// Modules
+	"Export": {
+		"prefix": "export",
+		"body": [
+			"export ${1:identifier}"
+		],
+		"description": "Export a module."
+	},
+	"Export-As": {
+		"prefix": "export-as",
+		"body": [
+			"export ${1:identifier} as ${2:alias}"
+		],
+		"description": "Export a module using an alias."
+	},
+	"Import": {
+		"prefix": "import",
+		"body": [
+			"import ${1:identifier}"
+		],
+		"description": "Import a module."
+	},
+	"Import-As": {
+		"prefix": "import-as",
+		"body": [
+			"import ${1:identifier} as ${2:alias}"
+		],
+		"description": "Import a module using an alias."
+	},
+	"Module": {
+		"prefix": "module",
+		"body": [
+			"module ${1:identifier} begin",
+			"\t$0",
+			"end"
+		],
+		"description": "A module."
+	},
+	// Programs
+	"\"Hello, World!\" Program": {
+		"prefix": "hello",
+		"body": [
+			"import io",
+			"$0",
+			"main (args : string []) begin",
+			"\tio.out (\"Hello, World!\")",
+			"end"
+		],
+		"description": "An example of the \"Hello, World!\" program."
+	}
+}
